@@ -1,6 +1,63 @@
-body { font-family: Arial, sans-serif; padding: 20px; }
-li { padding: 8px; border-bottom: 1px solid #ddd; display:flex; gap:12px; align-items:center;}
-.status { width:12px; height:12px; border-radius:50%; display:inline-block; }
-.status.active { background: #2ecc71; } /* grön */
-.status.inactive { background: #e74c3c; } /* röd */
-button { margin-bottom:12px; padding:8px 12px; }
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+}
+
+li { 
+    padding: 8px; 
+    border-bottom: 1px solid #ddd; 
+    display:flex; 
+    gap:12px; 
+    align-items:center;
+}
+
+.status { 
+    width:12px; 
+    height:12px; 
+    border-radius:50%; 
+    display:inline-block; 
+}
+
+.status.active { 
+    background: #2ecc71; 
+} 
+
+.status.inactive {
+    background: #e74c3c; 
+} 
+
+button { 
+    margin-bottom:12px; 
+    padding:8px 12px; 
+}
+
+.person {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .person:hover {
+    background-color: #d1ecf1;
+  }
+  
+  #info-box {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    pointer-events: none;
+    font-size: 0.9rem;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #info-box.show {
+    opacity: 1;
+  }
