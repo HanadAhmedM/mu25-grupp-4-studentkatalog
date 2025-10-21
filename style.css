@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+li { padding: 8px; border-bottom: 1px solid #ddd; display:flex; gap:12px; align-items:center;}
+.status { width:12px; height:12px; border-radius:50%; display:inline-block; }
+.status.active { background: #2ecc71; } /* grön */
+.status.inactive { background: #e74c3c; } /* röd */
+button { margin-bottom:12px; padding:8px 12px; }
