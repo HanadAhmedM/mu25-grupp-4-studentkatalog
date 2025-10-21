@@ -30,3 +30,34 @@ button {
     margin-bottom:12px; 
     padding:8px 12px; 
 }
+
+.person {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .person:hover {
+    background-color: #d1ecf1;
+  }
+  
+  #info-box {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    pointer-events: none;
+    font-size: 0.9rem;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #info-box.show {
+    opacity: 1;
+  }
