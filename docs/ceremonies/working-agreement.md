@@ -1,4 +1,4 @@
-Team: Hanad, Arezoo, Caroline 
+**Team: Hanad, Arezoo, Caroline**
 Repo: https://github.com/HanadAhmedM/mu25-grupp-4-studentkatalog 
 Trello-bräda:https://trello.com/b/bZ7CgUit/studentkatalog-arezoo-caroline-hanad
 
