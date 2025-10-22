@@ -1,45 +1,47 @@
- 
- // --- Studentdata ---
-const students = [
-    { name: "Alice", age: 25, active: true },
-    { name: "Bob", age: 30, active: false },
-    { name: "Charlie", age: 22, active: true },
-  ];
-  
-  // --- Elementreferenser ---
-  const main = document.querySelector("main");
-  const infoBox = document.getElementById("info-box");
-  const addButton = document.getElementById("add-student");
-  const studentList = document.getElementById("student-list");
-  
-  
-  
-  // --- Rendera dynamiska studentrutor ---
-  function renderStudentBoxes() {
-    // Ta bort tidigare dynamiska rutor
-    document.querySelectorAll(".dynamic-person").forEach((el) => el.remove());
-  
-    students.forEach((student, index) => {
-      const div = document.createElement("div");
-      div.classList.add("person", "dynamic-person");
-      div.dataset.name = student.name;
-      div.dataset.age = student.age;
-      div.dataset.index = index;
-      div.textContent = `${student.name} ${student.active ? "🟢" : "🔴"}`;
-      div.style.border = student.active ? "2px solid #2ecc71" : "2px solid #e74c3c";
-  
-      // Klicka för att ändra aktiv status
-      div.addEventListener("click", () => {
-        student.active = !student.active;
-        renderStudentList();
-        renderStudentBoxes();
-      });
-  
-      main.appendChild(div);
+ const students = [
+  { name: 'Anna Svensson', age: 24, active: true },
+  { name: 'Kalle Karlsson', age: 22, active: false },
+  { name: 'Sara Lind', age: 27, active: true },
+];
+
+function renderStudents() {
+  const list = document.getElementById('student-list');
+  list.innerHTML = '';
+
+  students.forEach((student, index) => {
+    const li = document.createElement('li');
+    li.className = student.active ? 'active' : 'inactive';
+    
+    // Skapa texten
+    const text = document.createElement('span');
+    text.textContent = `${student.name}, ${student.age} år`;
+    
+    // Skapa statusknappen
+    const button = document.createElement('button');
+    button.textContent = student.active ? '🟢 Aktiv' : '🔴 Inaktiv';
+    button.style.marginLeft = '1rem';
+    
+    // Lägg till klick-funktion
+    button.addEventListener('click', () => {
+      student.active = !student.active; // Växla status
+      renderStudents(); // Rendera om listan
     });
-  
-    attachHoverEvents(); // gör så hover fungerar
-  }
+
+    li.appendChild(text);
+    li.appendChild(button);
+    list.appendChild(li);
+  });
+}
+
+// Lägg till student
+document.getElementById('add-student-btn').addEventListener('click', () => {
+  students.push({ name: 'Ny Student', age: 20, active: false });
+  renderStudents();
+});
+
+renderStudents();
+
+
   
   // --- Hover-effekt för alla rutor (även statiska) ---
   function attachHoverEvents() {
