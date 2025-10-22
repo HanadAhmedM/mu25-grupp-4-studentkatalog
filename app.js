@@ -14,7 +14,7 @@ function renderStudents() {
     
     // Skapa texten
     const text = document.createElement('span');
-    text.textContent = `${student.name}, ${student.age} år`;
+    text.textContent = `${student.name}`;
     
     // Skapa statusknappen
     const button = document.createElement('button');
@@ -31,6 +31,7 @@ function renderStudents() {
     li.appendChild(button);
     list.appendChild(li);
   });
+  attachHoverEvents(); // gör så hover fungerar
 }
 
 // Lägg till student
