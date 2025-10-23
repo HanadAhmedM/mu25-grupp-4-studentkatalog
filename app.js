@@ -82,8 +82,11 @@ function attachHoverEvents() {
       infoBox.classList.remove("show");
     });
   });
-}
-
-
+ }
+ addButton.addEventListener("click", () => {
+  const newStudent = { name: "Ny Student", age: 20, active: false };
+  students.push(newStudent);
+  renderStudentBoxes();
+ });
 
 renderStudentBoxes();
