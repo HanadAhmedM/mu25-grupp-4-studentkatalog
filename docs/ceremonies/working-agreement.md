@@ -1,21 +1,25 @@
 # Team: Hanad, Arezoo, Caroline
-# - Repo: https://github.com/HanadAhmedM/mu25-grupp-4-studentkatalog
-# - Trello-bräda:https://trello.com/b/bZ7CgUit/studentkatalog-arezoo-caroline-hanad
+**Repo:** https://github.com/HanadAhmedM/mu25-grupp-4-studentkatalog
+ 
+**Trello-bräda:** https://trello.com/b/bZ7CgUit/studentkatalog-arezoo-caroline-hanad
 
-# *Tillgänglighet & kommunikation*
-# Kärntider: 
-- Vardagar 09–15  (
-- Daily scrum 9:00 - 15 min samt 15:00).
+# **Tillgänglighet & kommunikation**
+**Kärntider:** 
+- Vardagar 09–15  
+- Daily scrum 9:00 och 15:00 - 15 min.
   
-# Kanaler: Discord.
-# Svarstid: vardagar 09–15 – svar inom 2h.
+**Kanaler:** Discord.
 
-# *Möten:*  
-- planering på tisdag
-- dagliga standups ons,tors
-- presentera fre.
+**Svarstid:** vardagar 09–15 – svar inom 2h.
 
-# *Roller*
-# - PO: Hanad.
-# - SM: Caroline.
-# - Developers: Arezoo.
+# **Möten:**  
+- Planering på tisdag
+- Dagliga standups ons,tors
+- Presentera fre.
+
+# **Roller**
+**PO:** Hanad
+
+**SM:** Caroline
+
+**Developers:** Arezoo
