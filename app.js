@@ -12,7 +12,8 @@ const students = [
   const addButton = document.getElementById("add-student");
   const studentList = document.getElementById("student-list");
   
-  
+
+
   
   // --- Rendera dynamiska studentrutor ---
   function renderStudentBoxes() {
@@ -70,3 +71,4 @@ const students = [
   // --- Kör vid sidladdning ---
 
   renderStudentBoxes();
+ 
