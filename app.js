@@ -17,6 +17,14 @@ const students = [
   { name: "Bob", age: 30, active: false },
   { name: "Charlie", age: 22, active: true },
 ];
+// --- Lägg till dynamiska studenter ---
+const students = [
+  ...htmlStudents, // Lisa, Erik, Sara från HTML
+  { name: "Alice", age: 25, active: true },
+  { name: "Bob", age: 30, active: false },
+  { name: "Charlie", age: 22, active: true },
+];
+
 
 // --- Uppdatera alla studenter (HTML + dynamiska) ---
 function renderStudentBoxes() {
