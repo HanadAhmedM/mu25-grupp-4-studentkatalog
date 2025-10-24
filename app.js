@@ -11,7 +11,7 @@ const htmlStudents = Array.from(document.querySelectorAll(".person")).map((el, i
 }));
 
 // --- Lägg till dynamiska studenter ---
-const students = [
+const students = [ // komments
   ...htmlStudents, // Lisa, Erik, Sara från HTML
   { name: "Alice", age: 25, active: true },
   { name: "Bob", age: 30, active: false },
