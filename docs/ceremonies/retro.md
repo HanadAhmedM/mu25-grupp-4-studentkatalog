@@ -1,4 +1,8 @@
 
+Start / Stop / Continue (1–2 punkter per rad)
+konkret förbättring att prova nästa gång
+
+
 # Vad gick bra under sprinten?
   Bra samarbete, vi har kunnat sitta ner mycket ihop över discord och titta tillsammans, diskutera och lösa problemen som Arezoo haft med git och github.
    
@@ -17,4 +21,5 @@ Arezoo önskar tydligare arbetsinstruktioner i examinationen då hon tyckte det 
 Hanad tycker att vi ska vara snabbare med att fråga varandra/andra om man inte förstår och inte vänta för länge då hela dagar kan gå till spillo för att man inte ber om hjälp.
 
 Caroline önskar kortare dagliga stand ups, vi satte 15 min under planeringen men har suttit i 3h varje dag vilket tar mycket tid från det egna arbetet. Önskar även bättre koll på korten så man kollar ifall kortet redan är tilldelat någon innan man påbörjar något. 
+
 
