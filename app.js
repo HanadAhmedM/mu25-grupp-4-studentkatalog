@@ -84,6 +84,10 @@ function attachHoverEvents() {
   });
 }
 
-
+<<<<<<< HEAD
+console.log("Version från min branch");
+=======
+console.log("Version från main");
+>>>>>>> main
 
 renderStudentBoxes();
