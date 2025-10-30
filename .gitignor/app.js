@@ -1,4 +1,3 @@
-
 // --- Elementreferenser ---
 const main = document.querySelector("main");
 const infoBox = document.getElementById("info-box");
@@ -12,7 +11,7 @@ const htmlStudents = Array.from(document.querySelectorAll(".person")).map((el, i
 }));
 
 // --- Lägg till dynamiska studenter ---
-const students = [ //  andring
+const students = [
   ...htmlStudents, // Lisa, Erik, Sara från HTML
   { name: "Alice", age: 25, active: true },
   { name: "Bob", age: 30, active: false },
@@ -59,13 +58,7 @@ function renderStudentBoxes() {
     div.addEventListener("click", () => {
       student.active = !student.active;
       renderStudentBoxes();
-
     });
-
- 
-  // Kör render-funktionen vid sidladdning
-renderStudents();
-
 
     main.appendChild(div);
   });
@@ -91,11 +84,10 @@ function attachHoverEvents() {
   });
  }
 
- addButton.addEventListener("click", () => {// Lägg till en ny student (exempeldata)
+addButton.addEventListener("click", () => {
   const newStudent = { name: "Ny Student", age: 20, active: false };
   students.push(newStudent);
   renderStudentBoxes();
- });
- 
-renderStudentBoxes();
+});
 
+renderStudentBoxes();
